@@ -11,6 +11,7 @@ class ScaffoldLearnView extends StatelessWidget{
       appBar: AppBar(title: const Text('Scaffold Samples')),
       body: const Text("Merhabaaa"),
       backgroundColor: Colors.lightBlue,
+      extendBody: true,
       floatingActionButton: FloatingActionButton(
           onPressed: (){
         showModalBottomSheet(
@@ -27,13 +28,17 @@ class ScaffoldLearnView extends StatelessWidget{
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         drawer: const Drawer(),
         
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home_outlined),label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: 'Search'),
-        BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: 'Profile'),
-      
-        ]
-        ),
+      bottomNavigationBar: Container(
+        height: 140,
+        decoration: BoxDecoration(),
+        child: BottomNavigationBar(items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_outlined),label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: 'Search'),
+          BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: 'Profile'),
+        
+          ]
+          ),
+      ),
 
 
 

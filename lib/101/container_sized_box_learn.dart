@@ -37,7 +37,6 @@ class ContainerSizedBoxLearn extends StatelessWidget {
               ], 
               // shape: BoxShape.circle, // Eğer açarsan border ile çakışabilir, şimdilik yorumda kalması iyi.
               
-              // 2. DÜZELTME: border artık listenin içinde değil, BoxDecoration'ın altında!
               border: Border.all(width: 10, color: Colors.white12),
             ), // BoxDecoration kapanışı
           ), // Container kapanışı
